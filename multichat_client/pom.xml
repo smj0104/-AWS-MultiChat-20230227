@@ -19,11 +19,6 @@
   </dependency>
   
 	  
-  <dependency>
-  	<groupId>com.SocketClient</groupId>
-  	<artifactId>SocketClient</artifactId>
-  	<version>1.0.0</version>
-  </dependency>
   </dependencies>
   
   

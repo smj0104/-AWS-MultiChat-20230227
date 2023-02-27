@@ -180,8 +180,11 @@ public class ClientApplication extends JFrame {
 		PrintWriter printWriter = null;
 		try {
 			outputStream = socket.getOutputStream();
-			PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true);
+			printWriter  = new PrintWriter(outputStream, true);
 			printWriter.println(reqJson);
+			System.out.println("클라이언트 -> 서버: " + reqJson);
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 		
 		
