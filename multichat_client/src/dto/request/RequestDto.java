@@ -5,7 +5,7 @@ import lombok.Data;
 
 @AllArgsConstructor
 @Data
-public class RequsetDto<T> {
+public class RequestDto<T> {
 	private String resource;
 	private T body;
 }
